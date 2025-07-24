@@ -53,6 +53,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 .mb-100{
   margin-bottom:7.5rem;
@@ -112,7 +113,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 7.5rem 0 0;
+  padding: 7.5rem 16px 0;
   /* gap: 6rem; */
 }
 .descriptionPart,
@@ -374,14 +375,12 @@ margin-top:0;
 
 
 /* responsive part */
+/* responsive for mobile */
 
 @media screen and (max-width:600px) {
   /* common */
   html{
     font-size: 11px;
-  }
-  .container{
-    padding: 0 16px;
   }
   .mb-100,.mb-200{
   margin-bottom:7.5rem;
@@ -443,4 +442,28 @@ margin-top:0;
   .mt-r{
     margin: 2rem 0;
   }
+}
+/* responsive for tab */
+@media screen and (min-width:600px) and (max-width:922px) {
+  html{
+    font-size:13px;
+  }
+  /* header section  */
+  .noPaddingInMobile{
+    padding-right: 0;
+  }
+  .banner{
+      padding: 7.5rem 0 0 16px;
+      gap: 0;
+    }
+  /* footer section  */
+  .footerContainer{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width:922px) {
+  .banner {
+  padding: 7.5rem 0 0 16px;
+}
 }
