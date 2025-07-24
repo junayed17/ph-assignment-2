@@ -413,4 +413,20 @@ margin-top:0;
 .badge{
   display: none;
 }
+/* latest details section/Challenges Part section */
+.offers{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.offer-2{
+   padding: 3.5rem;
+}
+.offer-2 .offerText{
+  font-size:1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.offer-2 .btn{
+  font-size: 1rem;
+}
 }
