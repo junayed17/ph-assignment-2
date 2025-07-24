@@ -54,6 +54,9 @@ a {
 .mb-100{
   margin-bottom: 120px;
 }
+.mb-200{
+  margin-bottom: 200px;
+}
 .specialColor {
   color: var(--special-color);
 }
@@ -166,7 +169,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3.5rem;
+  gap: 5.5rem;
 }
 .plantLover li{
   list-style: disc;
@@ -174,12 +177,93 @@ a {
 .imgPart,.textPart{
   flex: 1;
 }
+.imgPart{
+  position: relative;
+}
+/* trusted badge */
+.badge{
+position: absolute;
+width: 286px;
+height: 286px;
+top:-130px;
+right:-100px;
+}
 .Paragraph{
   margin-top: 20px;
 }
 .descriptionM{
   margin:1.25rem 0;
 }
+/* latest details section/Challenges Part section  */
+.offers{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  gap:1.5rem;
+}
+.offers .offer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.offers .offer-1{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-bloom.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+
+}
+.offers .offer-2{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-ana.png");
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+    grid-row: span 2;
+  }
+.offers .offer-3{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-ana.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.offer-1,.offer-3{
+  padding: 3.5rem;
+}
+.offer-1 .offerText,.offer-3 .offerText{
+  font-family: var(--font-noto);
+  font-size: 1.25rem;
+  font-weight:var(--bold);
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+.offer-1 .btn,.offer-3 .btn{
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  font-weight:var(--semi);
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.offer-2 .offerText{
+  font-family: var(--font-noto);
+  font-size:2.5rem;
+  font-weight:var(--bold);
+  color: var(--white);
+}
+
+.offer-2 .btn{
+    font-family: var(--font-inter);
+  font-size: 1.75rem;
+  font-weight:var(--semi);
+  text-decoration: underline;
+  color: var(--white);
+}
+
+
+
 
     /* join section */
     .joinsection{
@@ -277,3 +361,4 @@ margin-top:0;
   transform: scale(1.1);
   transition: 0.3s;
 }
+
