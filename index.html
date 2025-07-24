@@ -18,14 +18,16 @@
     <nav class="nav container">
       <a href="index.html" class="logo"><img src="assets/logo.png" alt="" srcset=""></a>
       <ul class="naigationLinks">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">Shoap</a></li>
-        <li class="link"><a href="#">About us</a></li>
-        <li class="link"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart$(56)</a></li>
+        <li class="link"><ul class="naigationLinks hiddenInMobile">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">Shoap</a></li>
+          <li class="link"><a href="#">About us</a></li>
+        </ul></li>
+        <li class="link cardIcon"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart$(56)</a></li>
       </ul>
     </nav>
     <!-- banner section -->
-    <div class="banner container mb-100">
+    <div class="banner container mb-100 noPaddingInMobile">
       <div class="descriptionPart">
         <h1 class="bannerHeading">ALWAYS <span class="specialColor">FRESH FLOWERS</span></h1>
         <p class="description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
@@ -103,7 +105,7 @@
         </div>
     </section>
     <!-- plant lover section -->
-    <section class="plantLoverSection mb-100">
+    <section class="plantLoverSection mb-100 "hidden>
       <div class="container plantLover">
         <div class="imgPart">
           <img src="assets//flower-store.png" alt="">
@@ -128,7 +130,7 @@
       </div>
     </section>
     <!-- latest details section/Challenges Part section -->
-    <section class="latestDetailsSection mb-100">
+    <section class="latestDetailsSection mb-100" hidden>
       <div class="container">
         <div class="headingPart">
           <h3 class="sectionHeading"><span class="specialColor">Our</span> Plants</h3>
@@ -160,7 +162,7 @@
 
 
     <!-- join section -->
-    <section class="joinsection">
+    <section class="joinsection "hidden>
       <h3 class="sectionHeading joinHeading">Join the colorful Bunch</h3>
       <div class="emailAndSubscribe">
         <input type="text" class="text" placeholder="Write your email....">
@@ -168,7 +170,7 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer hidden>
     <div class="container footerContainer">
       <div class="logoPart">
         <div class="img">
