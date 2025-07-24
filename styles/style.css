@@ -55,10 +55,10 @@ a {
   margin: 0 auto;
 }
 .mb-100{
-  margin-bottom: 120px;
+  margin-bottom:7.5rem;
 }
 .mb-200{
-  margin-bottom: 200px;
+  margin-bottom:12.5rem;
 }
 .specialColor {
   color: var(--special-color);
@@ -375,14 +375,23 @@ margin-top:0;
 /* responsive part */
 
 @media screen and (max-width:600px) {
+  /* common */
   html{
     font-size: 11px;
   }
   .container{
     padding: 0 16px;
   }
+  .mb-100,.mb-200{
+  margin-bottom:7.5rem;
+}
+  /* header */
   .nav .hiddenInMobile{
     display: none;
+  }
+  .logo{
+    height:auto;
+    width:5.5rem;
   }
   .banner{
     flex-direction: column-reverse;
@@ -391,5 +400,8 @@ margin-top:0;
   .noPaddingInMobile{
     padding-right: 0;
   }
-
+/* plantsSection */
+.cards{
+  grid-template-columns: repeat(2,1fr);
+}
 }
