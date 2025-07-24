@@ -278,7 +278,7 @@ right:-100px;
       background-position: center;
       background-repeat: no-repeat;
       background-repeat: no-repeat;
-      padding: 200px 0;
+      padding:12.5rem 0;
     }
     .joinHeading{
       text-align: center;
@@ -429,4 +429,11 @@ margin-top:0;
 .offer-2 .btn{
   font-size: 1rem;
 }
+/* join section */
+.joinsection{
+  padding:5.5rem 0 4rem;
+}
+.emailAndSubscribe .button{
+      padding:1.1rem 3.3rem;
+    }
 }
