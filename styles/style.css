@@ -196,6 +196,7 @@ right:-100px;
 }
 .Paragraph{
   margin-top: 20px;
+    padding-left:1.5rem;
 }
 .descriptionM{
   margin:1.25rem 0;
@@ -403,5 +404,13 @@ margin-top:0;
 /* plantsSection */
 .cards{
   grid-template-columns: repeat(2,1fr);
+}
+/* plantLover section */
+.plantLover{
+  flex-direction: column;
+  box-sizing:content-box;
+}
+.badge{
+  display: none;
 }
 }
