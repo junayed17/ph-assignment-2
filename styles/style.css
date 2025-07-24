@@ -435,5 +435,12 @@ margin-top:0;
 }
 .emailAndSubscribe .button{
       padding:1.1rem 3.3rem;
-    }
+  }
+  /* footer section  */
+  .footerContainer{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .mt-r{
+    margin: 2rem 0;
+  }
 }
