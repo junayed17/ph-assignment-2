@@ -160,7 +160,27 @@ a {
 }
 .card .btn:hover{
   background:var(--btn-hover-color);
+} 
+/* plantLover section */
+.plantLover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem;
 }
+.plantLover li{
+  list-style: disc;
+}
+.imgPart,.textPart{
+  flex: 1;
+}
+.Paragraph{
+  margin-top: 20px;
+}
+.descriptionM{
+  margin:1.25rem 0;
+}
+
     /* join section */
     .joinsection{
       background:url("../assets/news-letter-bg.png");
