@@ -23,6 +23,7 @@ a {
 /* shered styles */
 :root {
   /* colors */
+  --body-bg:#F5F8FF;
   --nav-link-color: #8987a1;
   --description-color: rgba(0, 0, 0, 0.5);
   --black-color: #000000;
@@ -49,6 +50,11 @@ a {
   --semi: 600;
   --bold: 700;
   --extra: 800;
+  /* extra bg color */
+  --extra-bg-color:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+body{
+  background: var(--body-bg);
 }
 .container {
   max-width: 1140px;
@@ -215,7 +221,7 @@ right:-100px;
   flex-direction: column;
 }
 .offers .offer-1{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-bloom.png");
+  background:var(--extra-bg-color), url("../assets/deal-bloom.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,7 +229,7 @@ right:-100px;
 
 }
 .offers .offer-2{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-ana.png");
+  background:var(--extra-bg-color), url("../assets/deal-ana.png");
     background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,7 +237,7 @@ right:-100px;
     grid-row: span 2;
   }
 .offers .offer-3{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-ana.png");
+  background:var(--extra-bg-color), url("../assets/deal-ana.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -470,3 +476,18 @@ margin-top:0;
   padding: 7.5rem 0 0 16px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
